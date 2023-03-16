@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <button class="btn nav__btn" value="Мои дела">Мои дела</button>
+        </nav>
+        <button class="btn add__list">Новый список</button>
+      </header>
+      <main>
+        <div class="title">Мои дела</div>
+        <div class="add__act">
+          <input class="add__input" type="text" placeholder="Введите текст..." />
+          <button class="btn btn--add">Добавить</button>
+        </div>
+        <ol class="list" type="1">
+          <!-- Список дел -->
+        </ol>
+      </main>
+      <footer class="footer">
+        <hr />
+        Всего дел: <span class="total">0</span>
+        <br />
+        Выполено: <span class="totalDone">0</span>
+        <input class="btn delete__all" type="button" value="Удалить все" />
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

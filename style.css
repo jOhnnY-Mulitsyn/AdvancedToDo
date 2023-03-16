@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 7px 15px;
+  min-width: 455px;
+  max-width: 585px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #ecfaed;
+}
+
+.btn {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Ubuntu", sans-serif;
+  font-size: inherit;
+  border: none;
+}
+
+/* header
+=================================== */
+header {
+  position: relative;
+}
+
+nav {
+margin-right: 130px;
+line-height: 20px;
+}
+
+.nav__btn {
+  margin-right: 15px;
+}
+
+.add__list {
+  position: absolute;
+  padding: 0 8px 1px;
+  right: 16px;
+  top: 2px;
+  color: red;
+  border: red 2px solid;
+  border-radius: 10px;
+}
+
+/* main
+=================================== */
+.title {
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+.add__act {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.add__input {
+  width: 345px;
+  height: 25px;
+  padding-left: 5px;
+  font: inherit;
+  border: #58b364 1px inset;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 1px 1px 0 #bdffc9, -1px -1px 0 #e3ffe9;
+}
+
+input:focus {
+  border: #044df8 1px solid;
+  outline: 1px solid #044df8;
+}
+
+.btn--add {
+  width: 75px;
+  margin-left: -3px;
+  height: 25px;
+  border-radius: 0 5px 5px 0;
+  border: rgba(0, 0, 0, 0.5) 1px solid;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+}
+
+.btn--active {
+  border: rgb(0, 0, 0) 1px solid;
+  color: rgb(0, 0, 0);
+  outline: rgb(0, 0, 0) 1px solid;
+}
+
+/* list
+==================================== */
+.list {
+  padding-inline-start: 0;
+  max-height: 230px;
+  overflow-y: auto;
+}
+
+li:last-child {
+  margin: 0 5px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #18aaaa;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  background-color: #f9f9fd;
+}
+
+.act--done {
+  background-color: #72d676;
+  text-decoration: line-through;
+}
+
+.act {
+  position: relative;
+  padding: 0 137px 0 10px;
+  margin: 0 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 31px;
+  list-style-position: inside;
+  max-width: 555px;
+  height: 34px;
+  border: #000 1px solid;
+  border-radius: 5px;
+}
+
+.completed {
+  position: absolute;
+  right: 86px;
+  top: 8px;
+}
+
+.delete {
+  position: absolute;
+  right: 14px;
+  top: 8px;
+}
+
+/* footer 
+==================================*/
+.footer {
+  position: relative;
+  font-size: 22px;
+}
+
+hr {
+  border-color: #000;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
+.total {
+  margin-left: 6px;
+}
+
+.delete__all {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding: 5px 10px;
+  background-color: yellow;
+  border-radius: 5px;
+  border: #000 2px solid;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(36, 34, 34);
+}
+
+.visible {
+  display: inline-block;
+}
